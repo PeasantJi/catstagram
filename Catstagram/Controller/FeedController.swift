@@ -18,6 +18,7 @@ class FeedController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        fetchPosts()
     }
     
     // MARK: - Actions
@@ -35,6 +36,11 @@ class FeedController: UICollectionViewController {
         }
     }
     
+    // MARK: - API
+    
+    func fetchPosts() {
+        PostService.fetchPosts()
+    }
     // MARK: - Helpers
     
     func configureUI() {

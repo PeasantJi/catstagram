@@ -26,6 +26,10 @@
 		08C2A4EE2A29B6F800650ED9 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4ED2A29B6F800650ED9 /* RegistrationController.swift */; };
 		08C2A4F02A2AF3AF00650ED9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4EF2A2AF3AF00650ED9 /* CustomTextField.swift */; };
 		08C2A4F22A2DA59100650ED9 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4F12A2DA59100650ED9 /* AuthenticationViewModel.swift */; };
+		08C49DB82A401E3900A60389 /* YPImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 08C49DB72A401E3900A60389 /* YPImagePicker */; };
+		08C49DBA2A40228300A60389 /* UploadPostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DB92A40228300A60389 /* UploadPostController.swift */; };
+		08C49DBC2A40265F00A60389 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DBB2A40265F00A60389 /* InputTextView.swift */; };
+		08C49DBE2A40358900A60389 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DBD2A40358900A60389 /* PostService.swift */; };
 		08DD1F0C2A2DE42E001DFA09 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD1F0B2A2DE42E001DFA09 /* ImageUploader.swift */; };
 		08DD1F0E2A2DE43E001DFA09 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD1F0D2A2DE43E001DFA09 /* AuthService.swift */; };
 		08DD1F102A2ED3D0001DFA09 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD1F0F2A2ED3D0001DFA09 /* ProfileCell.swift */; };
@@ -68,6 +72,9 @@
 		08C2A4ED2A29B6F800650ED9 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		08C2A4EF2A2AF3AF00650ED9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		08C2A4F12A2DA59100650ED9 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViewModel.swift; path = Catstagram/ViewModel/AuthenticationViewModel.swift; sourceTree = SOURCE_ROOT; };
+		08C49DB92A40228300A60389 /* UploadPostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostController.swift; sourceTree = "<group>"; };
+		08C49DBB2A40265F00A60389 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		08C49DBD2A40358900A60389 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		08DD1F0B2A2DE42E001DFA09 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		08DD1F0D2A2DE43E001DFA09 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		08DD1F0F2A2ED3D0001DFA09 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -94,6 +101,7 @@
 				08DD1F812A397BC3001DFA09 /* FirebaseAnalytics in Frameworks */,
 				08DD1F892A397BC3001DFA09 /* FirebaseStorage in Frameworks */,
 				08DD1F1E2A318340001DFA09 /* SDWebImage in Frameworks */,
+				08C49DB82A401E3900A60389 /* YPImagePicker in Frameworks */,
 				08DD1F872A397BC3001DFA09 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +152,7 @@
 			children = (
 				08C2A4E52A2889F100650ED9 /* Extensions.swift */,
 				08DD1F162A302A7C001DFA09 /* Constants.swift */,
+				08C49DBB2A40265F00A60389 /* InputTextView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 				08DD1F0B2A2DE42E001DFA09 /* ImageUploader.swift */,
 				08DD1F0D2A2DE43E001DFA09 /* AuthService.swift */,
 				08DD1F142A302A34001DFA09 /* UserService.swift */,
+				08C49DBD2A40358900A60389 /* PostService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -168,6 +178,7 @@
 				08C2A4D92A284DA000650ED9 /* ImageSelectorController.swift */,
 				08C2A4DB2A284DAD00650ED9 /* NotificationController.swift */,
 				08C2A4DD2A284DBC00650ED9 /* ProfileController.swift */,
+				08C49DB92A40228300A60389 /* UploadPostController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,6 +256,7 @@
 				08DD1F842A397BC3001DFA09 /* FirebaseAuth */,
 				08DD1F862A397BC3001DFA09 /* FirebaseFirestore */,
 				08DD1F882A397BC3001DFA09 /* FirebaseStorage */,
+				08C49DB72A401E3900A60389 /* YPImagePicker */,
 			);
 			productName = Catstagram;
 			productReference = 08C2A4B62A28491100650ED9 /* Catstagram.app */;
@@ -278,6 +290,7 @@
 				08C2A4E72A288AEE00650ED9 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
 				08DD1F1C2A318340001DFA09 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				08DD1F7F2A397BC3001DFA09 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				08C49DB62A401E3900A60389 /* XCRemoteSwiftPackageReference "YPImagePicker" */,
 			);
 			productRefGroup = 08C2A4B72A28491100650ED9 /* Products */;
 			projectDirPath = "";
@@ -310,6 +323,7 @@
 			files = (
 				08C2A4F02A2AF3AF00650ED9 /* CustomTextField.swift in Sources */,
 				08DD1F122A2ED3E4001DFA09 /* ProfileHeader.swift in Sources */,
+				08C49DBA2A40228300A60389 /* UploadPostController.swift in Sources */,
 				08C2A4BE2A28491100650ED9 /* ViewController.swift in Sources */,
 				08C2A4EC2A29B6E900650ED9 /* LoginController.swift in Sources */,
 				08C2A4E22A28884B00650ED9 /* FeedCell.swift in Sources */,
@@ -322,6 +336,7 @@
 				08DD1F192A307D79001DFA09 /* User.swift in Sources */,
 				08C2A4DE2A284DBC00650ED9 /* ProfileController.swift in Sources */,
 				08DD1F1B2A316792001DFA09 /* ProfileHeaderViewModel.swift in Sources */,
+				08C49DBC2A40265F00A60389 /* InputTextView.swift in Sources */,
 				08DD1F172A302A7C001DFA09 /* Constants.swift in Sources */,
 				08C2A4D62A284D8400650ED9 /* FeedController.swift in Sources */,
 				08DD1F8B2A399FAC001DFA09 /* UserCellViewModel.swift in Sources */,
@@ -329,6 +344,7 @@
 				08C2A4E62A2889F100650ED9 /* Extensions.swift in Sources */,
 				08DD1F0C2A2DE42E001DFA09 /* ImageUploader.swift in Sources */,
 				08DD1F0E2A2DE43E001DFA09 /* AuthService.swift in Sources */,
+				08C49DBE2A40358900A60389 /* PostService.swift in Sources */,
 				08DD1F152A302A34001DFA09 /* UserService.swift in Sources */,
 				08DD1F102A2ED3D0001DFA09 /* ProfileCell.swift in Sources */,
 				08C2A4BC2A28491100650ED9 /* SceneDelegate.swift in Sources */,
@@ -560,6 +576,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		08C49DB62A401E3900A60389 /* XCRemoteSwiftPackageReference "YPImagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Yummypets/YPImagePicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		08DD1F1C2A318340001DFA09 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -583,6 +607,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 08C2A4E72A288AEE00650ED9 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
+		};
+		08C49DB72A401E3900A60389 /* YPImagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08C49DB62A401E3900A60389 /* XCRemoteSwiftPackageReference "YPImagePicker" */;
+			productName = YPImagePicker;
 		};
 		08DD1F1D2A318340001DFA09 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
