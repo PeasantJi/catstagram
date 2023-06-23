@@ -32,6 +32,9 @@
 		08C49DBE2A40358900A60389 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DBD2A40358900A60389 /* PostService.swift */; };
 		08C49DC02A40A3F600A60389 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DBF2A40A3F600A60389 /* Post.swift */; };
 		08C49DC22A41389900A60389 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DC12A41389900A60389 /* PostViewModel.swift */; };
+		08C49DC42A45565500A60389 /* CommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DC32A45565500A60389 /* CommentController.swift */; };
+		08C49DC62A455AF700A60389 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DC52A455AF700A60389 /* CommentCell.swift */; };
+		08C49DC82A45654200A60389 /* CommentInputAccessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C49DC72A45654100A60389 /* CommentInputAccessory.swift */; };
 		08DD1F0C2A2DE42E001DFA09 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD1F0B2A2DE42E001DFA09 /* ImageUploader.swift */; };
 		08DD1F0E2A2DE43E001DFA09 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD1F0D2A2DE43E001DFA09 /* AuthService.swift */; };
 		08DD1F102A2ED3D0001DFA09 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD1F0F2A2ED3D0001DFA09 /* ProfileCell.swift */; };
@@ -79,6 +82,9 @@
 		08C49DBD2A40358900A60389 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
 		08C49DBF2A40A3F600A60389 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		08C49DC12A41389900A60389 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		08C49DC32A45565500A60389 /* CommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentController.swift; sourceTree = "<group>"; };
+		08C49DC52A455AF700A60389 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		08C49DC72A45654100A60389 /* CommentInputAccessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentInputAccessory.swift; sourceTree = "<group>"; };
 		08DD1F0B2A2DE42E001DFA09 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		08DD1F0D2A2DE43E001DFA09 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		08DD1F0F2A2ED3D0001DFA09 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 				08C2A4DB2A284DAD00650ED9 /* NotificationController.swift */,
 				08C2A4DD2A284DBC00650ED9 /* ProfileController.swift */,
 				08C49DB92A40228300A60389 /* UploadPostController.swift */,
+				08C49DC32A45565500A60389 /* CommentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +201,8 @@
 				08C2A4E12A28884B00650ED9 /* FeedCell.swift */,
 				08C2A4EF2A2AF3AF00650ED9 /* CustomTextField.swift */,
 				08DD1F212A384E2F001DFA09 /* UserCell.swift */,
+				08C49DC52A455AF700A60389 /* CommentCell.swift */,
+				08C49DC72A45654100A60389 /* CommentInputAccessory.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,7 +338,9 @@
 			files = (
 				08C49DC22A41389900A60389 /* PostViewModel.swift in Sources */,
 				08C2A4F02A2AF3AF00650ED9 /* CustomTextField.swift in Sources */,
+				08C49DC82A45654200A60389 /* CommentInputAccessory.swift in Sources */,
 				08DD1F122A2ED3E4001DFA09 /* ProfileHeader.swift in Sources */,
+				08C49DC42A45565500A60389 /* CommentController.swift in Sources */,
 				08C49DBA2A40228300A60389 /* UploadPostController.swift in Sources */,
 				08C2A4BE2A28491100650ED9 /* ViewController.swift in Sources */,
 				08C2A4EC2A29B6E900650ED9 /* LoginController.swift in Sources */,
@@ -357,6 +368,7 @@
 				08DD1F102A2ED3D0001DFA09 /* ProfileCell.swift in Sources */,
 				08C2A4BC2A28491100650ED9 /* SceneDelegate.swift in Sources */,
 				08C2A4EE2A29B6F800650ED9 /* RegistrationController.swift in Sources */,
+				08C49DC62A455AF700A60389 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
