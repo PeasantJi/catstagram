@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0858DFC72A4D4BB7008D7D93 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFC62A4D4BB7008D7D93 /* CommentService.swift */; };
+		0858DFC92A4D5870008D7D93 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFC82A4D5870008D7D93 /* Comment.swift */; };
+		0858DFCB2A4D5D24008D7D93 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFCA2A4D5D24008D7D93 /* CommentViewModel.swift */; };
 		08C2A4BA2A28491100650ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4B92A28491100650ED9 /* AppDelegate.swift */; };
 		08C2A4BC2A28491100650ED9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4BB2A28491100650ED9 /* SceneDelegate.swift */; };
 		08C2A4BE2A28491100650ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4BD2A28491100650ED9 /* ViewController.swift */; };
@@ -57,6 +60,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0858DFC62A4D4BB7008D7D93 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		0858DFC82A4D5870008D7D93 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		0858DFCA2A4D5D24008D7D93 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 		08C2A4B62A28491100650ED9 /* Catstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C2A4B92A28491100650ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C2A4BB2A28491100650ED9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +180,7 @@
 				08DD1F0D2A2DE43E001DFA09 /* AuthService.swift */,
 				08DD1F142A302A34001DFA09 /* UserService.swift */,
 				08C49DBD2A40358900A60389 /* PostService.swift */,
+				0858DFC62A4D4BB7008D7D93 /* CommentService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -212,6 +219,7 @@
 			children = (
 				08DD1F182A307D79001DFA09 /* User.swift */,
 				08C49DBF2A40A3F600A60389 /* Post.swift */,
+				0858DFC82A4D5870008D7D93 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 				08DD1F1A2A316792001DFA09 /* ProfileHeaderViewModel.swift */,
 				08DD1F8A2A399FAC001DFA09 /* UserCellViewModel.swift */,
 				08C49DC12A41389900A60389 /* PostViewModel.swift */,
+				0858DFCA2A4D5D24008D7D93 /* CommentViewModel.swift */,
 			);
 			name = ViewModel;
 			path = Catstagram/ViewModel;
@@ -336,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0858DFCB2A4D5D24008D7D93 /* CommentViewModel.swift in Sources */,
 				08C49DC22A41389900A60389 /* PostViewModel.swift in Sources */,
 				08C2A4F02A2AF3AF00650ED9 /* CustomTextField.swift in Sources */,
 				08C49DC82A45654200A60389 /* CommentInputAccessory.swift in Sources */,
@@ -345,6 +355,8 @@
 				08C2A4BE2A28491100650ED9 /* ViewController.swift in Sources */,
 				08C2A4EC2A29B6E900650ED9 /* LoginController.swift in Sources */,
 				08C2A4E22A28884B00650ED9 /* FeedCell.swift in Sources */,
+				0858DFC72A4D4BB7008D7D93 /* CommentService.swift in Sources */,
+				0858DFC92A4D5870008D7D93 /* Comment.swift in Sources */,
 				08C2A4D82A284D9000650ED9 /* SearchController.swift in Sources */,
 				08C2A4DC2A284DAD00650ED9 /* NotificationController.swift in Sources */,
 				08C2A4F22A2DA59100650ED9 /* AuthenticationViewModel.swift in Sources */,

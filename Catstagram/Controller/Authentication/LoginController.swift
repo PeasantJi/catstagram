@@ -52,7 +52,8 @@ class LoginController: UIViewController {
     
     private let forgotPasswordButton: UIButton = {
         let button = UIButton(type: .system)
-        button.attributedTitle(firstPart: "Forgot your password?", secondPart: "Get Help signing in.")
+        button.attributedTitle(firstPart: "Forgot your password?", secondPart: "Get Help Here.")
+        button.sizeToFit()
         return button
     }()
     
