@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAuth
 
+
 struct PostService {
     static func uploadPost(caption: String, image: UIImage, user: User,
                            complpetion: @escaping(FirestoreCompletion)) {
@@ -33,8 +34,6 @@ struct PostService {
             
             let posts = documents.map({ Post(postId: $0.documentID, dictionary: $0.data()) })
             completion(posts)
-
-
         }
     }
     
@@ -52,7 +51,16 @@ struct PostService {
             
             completion(posts)
         }
-        
+    }
+    
+
+    static func fetchPost(withPostId postId: String, completion: @escaping(Post) -> Void) {
+        COLLECTION_POSTS.document(postId).getDocument { snapshot, _ in
+            guard let snapshot = snapshot else { return }
+            guard let data = snapshot.data() else { return }
+            let post = Post(postId: snapshot.documentID, dictionary: data)
+            completion(post)
+        }
     }
     
     static func likePost(post: Post, completion: @escaping(FirestoreCompletion)) {

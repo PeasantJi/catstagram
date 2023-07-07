@@ -10,6 +10,10 @@
 		0858DFC72A4D4BB7008D7D93 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFC62A4D4BB7008D7D93 /* CommentService.swift */; };
 		0858DFC92A4D5870008D7D93 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFC82A4D5870008D7D93 /* Comment.swift */; };
 		0858DFCB2A4D5D24008D7D93 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFCA2A4D5D24008D7D93 /* CommentViewModel.swift */; };
+		0858DFCD2A53E351008D7D93 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFCC2A53E351008D7D93 /* NotificationCell.swift */; };
+		0858DFCF2A554791008D7D93 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFCE2A554791008D7D93 /* Notification.swift */; };
+		0858DFD12A554B72008D7D93 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFD02A554B72008D7D93 /* NotificationService.swift */; };
+		0858DFD32A555DFA008D7D93 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0858DFD22A555DFA008D7D93 /* NotificationViewModel.swift */; };
 		08C2A4BA2A28491100650ED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4B92A28491100650ED9 /* AppDelegate.swift */; };
 		08C2A4BC2A28491100650ED9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4BB2A28491100650ED9 /* SceneDelegate.swift */; };
 		08C2A4BE2A28491100650ED9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C2A4BD2A28491100650ED9 /* ViewController.swift */; };
@@ -63,6 +67,10 @@
 		0858DFC62A4D4BB7008D7D93 /* CommentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
 		0858DFC82A4D5870008D7D93 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		0858DFCA2A4D5D24008D7D93 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		0858DFCC2A53E351008D7D93 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		0858DFCE2A554791008D7D93 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		0858DFD02A554B72008D7D93 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		0858DFD22A555DFA008D7D93 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		08C2A4B62A28491100650ED9 /* Catstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C2A4B92A28491100650ED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C2A4BB2A28491100650ED9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +189,7 @@
 				08DD1F142A302A34001DFA09 /* UserService.swift */,
 				08C49DBD2A40358900A60389 /* PostService.swift */,
 				0858DFC62A4D4BB7008D7D93 /* CommentService.swift */,
+				0858DFD02A554B72008D7D93 /* NotificationService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -210,6 +219,7 @@
 				08DD1F212A384E2F001DFA09 /* UserCell.swift */,
 				08C49DC52A455AF700A60389 /* CommentCell.swift */,
 				08C49DC72A45654100A60389 /* CommentInputAccessory.swift */,
+				0858DFCC2A53E351008D7D93 /* NotificationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +230,7 @@
 				08DD1F182A307D79001DFA09 /* User.swift */,
 				08C49DBF2A40A3F600A60389 /* Post.swift */,
 				0858DFC82A4D5870008D7D93 /* Comment.swift */,
+				0858DFCE2A554791008D7D93 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +252,7 @@
 				08DD1F8A2A399FAC001DFA09 /* UserCellViewModel.swift */,
 				08C49DC12A41389900A60389 /* PostViewModel.swift */,
 				0858DFCA2A4D5D24008D7D93 /* CommentViewModel.swift */,
+				0858DFD22A555DFA008D7D93 /* NotificationViewModel.swift */,
 			);
 			name = ViewModel;
 			path = Catstagram/ViewModel;
@@ -346,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0858DFCB2A4D5D24008D7D93 /* CommentViewModel.swift in Sources */,
+				0858DFD32A555DFA008D7D93 /* NotificationViewModel.swift in Sources */,
 				08C49DC22A41389900A60389 /* PostViewModel.swift in Sources */,
 				08C2A4F02A2AF3AF00650ED9 /* CustomTextField.swift in Sources */,
 				08C49DC82A45654200A60389 /* CommentInputAccessory.swift in Sources */,
@@ -357,6 +370,7 @@
 				08C2A4E22A28884B00650ED9 /* FeedCell.swift in Sources */,
 				0858DFC72A4D4BB7008D7D93 /* CommentService.swift in Sources */,
 				0858DFC92A4D5870008D7D93 /* Comment.swift in Sources */,
+				0858DFCF2A554791008D7D93 /* Notification.swift in Sources */,
 				08C2A4D82A284D9000650ED9 /* SearchController.swift in Sources */,
 				08C2A4DC2A284DAD00650ED9 /* NotificationController.swift in Sources */,
 				08C2A4F22A2DA59100650ED9 /* AuthenticationViewModel.swift in Sources */,
@@ -372,6 +386,7 @@
 				08DD1F8B2A399FAC001DFA09 /* UserCellViewModel.swift in Sources */,
 				08C2A4D42A284B9F00650ED9 /* MainTabController.swift in Sources */,
 				08C2A4E62A2889F100650ED9 /* Extensions.swift in Sources */,
+				0858DFD12A554B72008D7D93 /* NotificationService.swift in Sources */,
 				08DD1F0C2A2DE42E001DFA09 /* ImageUploader.swift in Sources */,
 				08C49DC02A40A3F600A60389 /* Post.swift in Sources */,
 				08DD1F0E2A2DE43E001DFA09 /* AuthService.swift in Sources */,
@@ -379,6 +394,7 @@
 				08DD1F152A302A34001DFA09 /* UserService.swift in Sources */,
 				08DD1F102A2ED3D0001DFA09 /* ProfileCell.swift in Sources */,
 				08C2A4BC2A28491100650ED9 /* SceneDelegate.swift in Sources */,
+				0858DFCD2A53E351008D7D93 /* NotificationCell.swift in Sources */,
 				08C2A4EE2A29B6F800650ED9 /* RegistrationController.swift in Sources */,
 				08C49DC62A455AF700A60389 /* CommentCell.swift in Sources */,
 			);
