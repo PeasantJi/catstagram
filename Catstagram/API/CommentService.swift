@@ -6,14 +6,14 @@
 //
 
 import FirebaseAuth
-
+import FirebaseFirestore
 struct CommentSerive {
     static func uploadComment(comment: String, postID: String, user: User,
                               completion: @escaping(FirestoreCompletion)) {
-        let date = Date()
+//        let date = Date()
         let data: [String: Any] = ["uid": user.uid,
                                    "comment": comment,
-                                   "timestamp": date,
+                                   "timestamp": Timestamp(date: Date()),
                                    "username": user.username,
                                    "profileImageUrl": user.profileImageUrl]
         COLLECTION_POSTS.document(postID).collection("comments").addDocument(data: data,

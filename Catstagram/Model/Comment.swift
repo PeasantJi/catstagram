@@ -6,12 +6,13 @@
 //
 
 import FirebaseAuth
+import FirebaseFirestore
 
 struct Comment {
     let uid: String
     let username: String
     let profileImageUrl: String
-    let timestamp: Date
+    let timestamp: Timestamp
     let commentText: String
     
     init(dictionary: [String: Any]) {
@@ -19,7 +20,7 @@ struct Comment {
         self.username = dictionary["username"] as? String ?? ""
         self.profileImageUrl = dictionary["profileImageUrl"] as? String ?? ""
         self.commentText = dictionary["comment"] as? String ?? ""
-        self.timestamp = dictionary["timestamp"] as? Date ?? Date.now
+        self.timestamp = dictionary["timestamp"] as? Timestamp ?? Timestamp(date: Date())
 
     }
 }

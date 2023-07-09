@@ -6,10 +6,11 @@
 //
 
 import Foundation
-import Firebase
 import FirebaseAuth
-import FirebaseCore
 import FirebaseFirestore
+
+typealias SendPasswordResetCallback = (Error?) -> Void
+
 
 struct AuthCredentials {
     let email: String
@@ -48,4 +49,10 @@ struct AuthService {
             }
         }
     }
+    
+    static func resetPassword(withEmail email: String, completion: @escaping(SendPasswordResetCallback)) {
+        Auth.auth().sendPasswordReset(withEmail: email, completion: completion)
+    }
+    
+    
 }

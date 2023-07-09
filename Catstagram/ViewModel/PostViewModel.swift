@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 struct PostViewModel {
     public var post: Post
@@ -34,6 +35,14 @@ struct PostViewModel {
         } else {
             return "\(post.likes) like"
         }
+    }
+    
+    var timestampString: String? {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [ .second, .minute, .hour, .day, .weekOfMonth]
+        formatter.maximumUnitCount = 1
+        formatter.unitsStyle = .full
+        return formatter.string(from: post.timestamp.dateValue(), to: Date())
     }
     
     init(post: Post) { self.post = post }

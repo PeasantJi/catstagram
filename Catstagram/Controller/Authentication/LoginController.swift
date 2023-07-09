@@ -54,6 +54,7 @@ class LoginController: UIViewController {
         let button = UIButton(type: .system)
         button.attributedTitle(firstPart: "Forgot your password?", secondPart: "Get Help Here.")
         button.sizeToFit()
+        button.addTarget(self, action: #selector(handleShowResetPassword), for: .touchUpInside)
         return button
     }()
     
@@ -90,6 +91,7 @@ class LoginController: UIViewController {
 
     @objc func handleShowSignUp() {
         let controller = RegistrationController()
+        controller.delegate = delegate
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -100,6 +102,13 @@ class LoginController: UIViewController {
             viewModel.password = sender.text
         }
         updateForm()
+    }
+    
+    @objc func handleShowResetPassword() {
+        let controller = ResetPasswordController()
+        controller.delegate = self
+        controller.email = emailTextField.text
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     // MARK: - Helpers
@@ -149,3 +158,12 @@ extension LoginController: FormViewModel {
     }
 }
 
+// MARK: - ResetPasswordControllerDelegate
+
+extension LoginController: ResetPasswordControllerDelegate {
+    func controllerDidSendResetPasswordLink(_ controller: ResetPasswordController) {
+        navigationController?.popViewController(animated: true)
+        showMessage(withTitle: "Success",
+                    message: "we sent a link to your email to reset your password")
+    }
+}

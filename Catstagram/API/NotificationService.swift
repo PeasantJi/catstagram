@@ -19,8 +19,7 @@ struct NotificationService {
         guard uid != currentUid else { return }
         
         let docRef = COLLECTION_NOTIFICATIONS.document(uid).collection("user-notifications").document()
-        let date = Date()
-        var data: [String: Any] = ["timestamp": date,
+        var data: [String: Any] = ["timestamp": Timestamp(date: Date()),
                                    "uid": fromUser.uid,
                                    "type": type.rawValue,
                                    "id": docRef.documentID,
@@ -38,7 +37,10 @@ struct NotificationService {
     static func fetchNotifications(completion: @escaping([Notification]) -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
-        COLLECTION_NOTIFICATIONS.document(uid).collection("user-notifications").getDocuments {
+        let query = COLLECTION_NOTIFICATIONS.document(uid).collection("user-notifications")
+            .order(by: "timestamp", descending: true)
+        
+            query.getDocuments {
             snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             
