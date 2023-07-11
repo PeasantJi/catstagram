@@ -15,7 +15,6 @@ struct PostService {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
         ImageUploader.uploadImage(image: image) { imageUrl in
-//            let date = Date()
             let data = ["caption": caption,
                         "timestamp": Timestamp(date: Date()),
                         "likes": 0,
@@ -103,14 +102,14 @@ struct PostService {
         var posts = [Post]()
         
         COLLECTION_USERS.document(uid).collection("user-feed").getDocuments { snapshot, error in
-            snapshot?.documents.forEach { document in
+            snapshot?.documents.forEach({ document in
                 fetchPost(withPostId: document.documentID) { post in
                     posts.append(post)
                     posts.sort { $0.timestamp.seconds > $1.timestamp.seconds }
 
                     completion(posts)
                 }
-            }
+            })
         }
     }
     

@@ -55,7 +55,6 @@
 		08DD1F202A318340001DFA09 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 08DD1F1F2A318340001DFA09 /* SDWebImageMapKit */; };
 		08DD1F222A384E2F001DFA09 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08DD1F212A384E2F001DFA09 /* UserCell.swift */; };
 		08DD1F5F2A386650001DFA09 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 08DD1F5E2A386650001DFA09 /* GoogleService-Info.plist */; };
-		08DD1F722A3978AC001DFA09 /* GoogleService-Info (2).plist in Resources */ = {isa = PBXBuildFile; fileRef = 08DD1F712A3978AC001DFA09 /* GoogleService-Info (2).plist */; };
 		08DD1F812A397BC3001DFA09 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 08DD1F802A397BC3001DFA09 /* FirebaseAnalytics */; };
 		08DD1F832A397BC3001DFA09 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 08DD1F822A397BC3001DFA09 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		08DD1F852A397BC3001DFA09 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 08DD1F842A397BC3001DFA09 /* FirebaseAuth */; };
@@ -111,7 +110,6 @@
 		08DD1F1A2A316792001DFA09 /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		08DD1F212A384E2F001DFA09 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		08DD1F5E2A386650001DFA09 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		08DD1F712A3978AC001DFA09 /* GoogleService-Info (2).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (2).plist"; sourceTree = "<group>"; };
 		08DD1F8A2A399FAC001DFA09 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +152,6 @@
 		08C2A4B82A28491100650ED9 /* Catstagram */ = {
 			isa = PBXGroup;
 			children = (
-				08DD1F712A3978AC001DFA09 /* GoogleService-Info (2).plist */,
 				08DD1F5E2A386650001DFA09 /* GoogleService-Info.plist */,
 				08C2A4D22A2849D500650ED9 /* Model */,
 				08C2A4D12A2849C800650ED9 /* View */,
@@ -348,7 +345,6 @@
 				08C2A4C62A28491400650ED9 /* LaunchScreen.storyboard in Resources */,
 				08DD1F5F2A386650001DFA09 /* GoogleService-Info.plist in Resources */,
 				08C2A4E02A285C6A00650ED9 /* Assets.xcassets in Resources */,
-				08DD1F722A3978AC001DFA09 /* GoogleService-Info (2).plist in Resources */,
 				08C2A4C12A28491100650ED9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

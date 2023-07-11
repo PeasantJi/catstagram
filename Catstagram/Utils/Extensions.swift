@@ -1,9 +1,8 @@
 //
 //  Extensions.swift
-//  InstagramFirestoreTutorial
+//  Catstagram
 //
-//  Created by Stephen Dowless on 6/19/20.
-//  Copyright © 2020 Stephan Dowless. All rights reserved.
+//  Created by JISUNG LEE on 2023/06/07.
 //
 
 import UIKit
