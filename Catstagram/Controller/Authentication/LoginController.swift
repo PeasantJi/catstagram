@@ -20,7 +20,7 @@ class LoginController: UIViewController {
     weak var delegate: AuthenticationDelegate?
     
     private let iconImage: UIImageView = {
-        let iv = UIImageView(image: #imageLiteral(resourceName: "Instagram_logo_white"))
+        let iv = UIImageView(image: #imageLiteral(resourceName: "catstagram_logo"))
         iv.contentMode = .scaleAspectFill
         return iv
     }()
@@ -41,7 +41,7 @@ class LoginController: UIViewController {
         let button = UIButton(type: .system)
         button.setTitle("Log In", for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.5)
+        button.backgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1).withAlphaComponent(0.5)
         button.layer.cornerRadius = 5
         button.setHeight(50)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -118,11 +118,11 @@ class LoginController: UIViewController {
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
         
-        let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemBlue.cgColor]
-        gradient.locations = [0, 1]
-        view.layer.addSublayer(gradient)
-        gradient.frame = view.frame
+//        let gradient = CAGradientLayer()
+//        gradient.colors = [UIColor.systemRed.cgColor, UIColor.systemBlue.cgColor]
+//        gradient.locations = [0, 1]
+//        view.layer.addSublayer(gradient)
+//        gradient.frame = view.frame
         
         view.addSubview(iconImage)
         iconImage.centerX(inView: view)
